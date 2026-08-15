@@ -146,6 +146,10 @@ def signup_for_activity(activity_name: str, email: str):
     return {"message": f"Signed up {email} for {activity_name}"}
 
 
+# Store activity change log
+activity_log = []
+
+
 @app.delete("/activities/{activity_name}/signup")
 def unregister_for_activity(activity_name: str, email: str):
     """Remove a student from an activity"""

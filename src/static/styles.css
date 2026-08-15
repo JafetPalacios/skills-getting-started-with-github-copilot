@@ -57,6 +57,70 @@ section h3 {
   color: #1a237e;
 }
 
+#controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#search-activities {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#sort-button, #export-button {
+  padding: 10px 15px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+#sort-button:hover, #export-button:hover {
+  background-color: #3949ab;
+}
+
+.activity-card.hidden-activity {
+  display: none;
+}
+
+.availability-indicator {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.availability-high {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.availability-medium {
+  background-color: #fff9c4;
+  color: #f57f17;
+}
+
+.availability-low {
+  background-color: #ffccbc;
+  color: #d84315;
+}
+
+.availability-full {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
